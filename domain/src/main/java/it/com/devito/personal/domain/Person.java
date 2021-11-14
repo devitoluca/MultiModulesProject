@@ -2,11 +2,23 @@ package it.com.devito.personal.domain;
 
 import lombok.ToString;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table
 @ToString
 public class Person {
 
+    @Id
     protected int id;
+
+    @Column
     protected String name;
+
+    @Column
     protected String surname;
 
     public Person(){}
