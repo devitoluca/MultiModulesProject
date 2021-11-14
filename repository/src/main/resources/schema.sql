@@ -1,3 +1,6 @@
+drop table if exists Person;
+drop table if exists Car;
+
 create table Person (
   id int primary key,
   name varchar not null,
